@@ -14,15 +14,21 @@
             height: 100%;
         }
 
-        #Lbox {
+        #Lbox,
+        #Rbox {
             width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
             border: 1px solid black;
+        }
+
+        #Lbox {
             background-color: pink;
         }
 
         #Rbox {
-            width: 50%;
-            border: 1px solid black;
             background-color: skyblue;
         }
     </style>
@@ -30,12 +36,8 @@
 
 <body>
     <div class="boxes">
-        <div id="Lbox">
-            <p>Left</p>
-        </div>
-        <div id="Rbox">
-            <p>Right</p>
-        </div>
+        <div id="Lbox">Left</div>
+        <div id="Rbox">Right</div>
     </div>
 </body>
 
