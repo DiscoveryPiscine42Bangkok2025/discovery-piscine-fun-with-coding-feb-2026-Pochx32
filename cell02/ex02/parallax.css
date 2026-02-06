@@ -1,0 +1,52 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Parallax sections */
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* First image */
+.img1 {
+    background-image: url("https://robbreport.com/wp-content/uploads/2024/06/opener-w-Bugatti-3_a9c757.jpg?w=800");
+}
+
+/* Second image */
+.img2 {
+    background-image: url("https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&height=900&width=1600&fit=bounds");
+}
+
+/* Center text */
+.text {
+    color: white;
+    font-size: 32px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+/* Black block */
+.content {
+    height: 300px;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+}

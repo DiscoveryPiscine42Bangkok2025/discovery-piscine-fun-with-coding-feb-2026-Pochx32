@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+h1 {
+    margin: 15px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile {
+    width: 100%;
+}
+
+.login {
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.desc {
+    color: gray;
+    padding: 5px 0;
+}
+
+.location {
+    padding-bottom: 10px;
+}
+
+.social img {
+    width: 20px;
+    margin: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: rgb(78, 78, 78);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:active {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: rgb(85, 97, 255);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
