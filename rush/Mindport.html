@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        :root {
+            --pink: #fde2f3;
+            --purple: #ece6ff;
+            --blue: #e9f4ff;
+            --green: #e9f7f0;
+            --yellow: #fff6df;
+            --text: #333;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffffff, #faf8ff);
+            color: var(--text);
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        h2 {
+            font-weight: 700;
+            margin-bottom: 40px;
+            letter-spacing: -0.5px;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, .85);
+            backdrop-filter: blur(12px);
+            border-radius: 0 0 28px 28px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, .05);
+        }
+
+        .hero {
+            padding-top: 150px;
+        }
+
+        .hero-card {
+            background: linear-gradient(135deg, var(--pink), var(--purple));
+            border-radius: 42px;
+            padding: 70px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, .08);
+        }
+
+        .profile-img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #fff;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, .18);
+        }
+
+        .soft-card {
+            border-radius: 32px;
+            padding: 36px;
+            background: #fff;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, .08);
+            transition: transform .35s ease, box-shadow .35s ease;
+        }
+
+        .soft-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 28px 55px rgba(0, 0, 0, .12);
+        }
+
+        .bg-blue {
+            background: var(--blue);
+        }
+
+        .bg-green {
+            background: var(--green);
+        }
+
+        .bg-yellow {
+            background: var(--yellow);
+        }
+
+        .bg-purple {
+            background: var(--purple);
+        }
+
+        .bg-pink {
+            background: var(--pink);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 7px 16px;
+            border-radius: 999px;
+            background: #fff;
+            margin: 6px;
+            font-size: .85rem;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, .08);
+        }
+
+        #contact .soft-card {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 36px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            width: 48px;
+            height: 48px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #fff;
+            font-size: 1.2rem;
+            margin: 0 10px;
+            color: #555;
+            box-shadow: 0 10px 22px rgba(0, 0, 0, .12);
+            transition: .3s;
+        }
+
+        .social-icons a:hover {
+            transform: translateY(-5px);
+            color: #000;
+            box-shadow: 0 16px 32px rgba(0, 0, 0, .18);
+        }
+
+        footer {
+            padding: 35px 0;
+            text-align: center;
+            color: #888;
+            font-size: .9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="home.html">Portfolio</a>
+
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#focus">Focus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="about">
+        <div class="container">
+            <div class="hero-card">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-4 text-center">
+                        <img src="./photosrc/Mind_profile.jpg" class="profile-img" alt="Profile">
+                    </div>
+                    <div class="col-lg-8">
+                        <h2>Chaniporn Chitowath (Mind)</h2>
+                        <p>
+                            Industrial Engineering student at KMITL who is detail-oriented and adaptable,
+                            with a strong interest in data analytics, process improvement, and data visualization.
+                        </p>
+                        <p>
+                            I enjoy turning complex data into clear, meaningful insights by combining analytical
+                            thinking, system design, and creativity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="focus">
+        <div class="container">
+            <h2 class="text-center">What I Focus On</h2>
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="soft-card bg-blue h-100">
+                        <h5 class="fw-bold">Data Analytics</h5>
+                        <p><strong>Tools:</strong> Power BI, SQL, KPI analysis</p>
+                        <p><strong>Goal:</strong> Transform raw data into clear, actionable insights</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="soft-card bg-green h-100">
+                        <h5 class="fw-bold">Process Improvement</h5>
+                        <p><strong>Methods:</strong> Line balancing, PDCA, root-cause analysis</p>
+                        <p><strong>Goal:</strong> Enhance workflow efficiency and system performance</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="soft-card bg-yellow h-100">
+                        <h5 class="fw-bold">Programming & Automation</h5>
+                        <p><strong>Tools:</strong> Power Apps, C, HTML, CSS, JavaScript, Python</p>
+                        <p><strong>Goal:</strong> Automate tasks and build simple business applications</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="soft-card bg-purple h-100">
+                        <h5 class="fw-bold">Visualization & UX Design</h5>
+                        <p><strong>Focus:</strong> Dashboard design and UI/UX</p>
+                        <p><strong>Goal:</strong> Communicate insights clearly through visual storytelling</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="soft-card bg-pink h-100">
+                        <h5 class="fw-bold">Work Style & Mindset</h5>
+                        <p><strong>Traits:</strong> Detail-oriented, adaptable, responsible</p>
+                        <p><strong>Approach:</strong> Growth mindset and continuous learning</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="bg-purple">
+        <div class="container">
+            <h2 class="text-center">Experience</h2>
+            <div class="soft-card">
+                <h5 class="fw-bold">Co-operative Education – Data & Process</h5>
+                <ul>
+                    <li>Developed Power BI dashboards for Design vs Actual analysis</li>
+                    <li>Analyzed production flow, WIP, bottlenecks, and performance</li>
+                    <li>Applied PDCA and 4M1E for continuous improvement</li>
+                </ul>
+                <hr>
+                <h5 class="fw-bold">Internship – Warehouse & Quality</h5>
+                <ul>
+                    <li>Cold chain validation and temperature data analysis</li>
+                    <li>Created work instructions and quality reports</li>
+                    <li>Proposed data-driven process improvements</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container text-center">
+            <h2>Skills</h2>
+            <div class="soft-card">
+
+                <span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">Data
+                    Visualization</span><span class="tag">Process Analysis</span><span class="tag">KPI Analysis</span>
+
+                <br><br>
+                <span class="tag">C</span><span class="tag">Python</span><span class="tag">HTML</span><span
+                    class="tag">CSS</span><span class="tag">Power Apps</span>
+
+                <br><br>
+                <span class="tag">Canva</span><span class="tag">SolidWorks</span><span
+                    class="tag">Illustrator</span><span class="tag">Photoshop</span>
+
+                <br><br>
+                <span class="tag">Microsoft Excel</span><span class="tag">PowerPoint</span>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container text-center">
+            <h2>Contact</h2>
+            <div class="soft-card bg-blue">
+
+                <div class="social-icons">
+                    <a href="mailto:65010183@kmitl.ac.th">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://github.com/DiscoveryPiscine42Bangkok2025/discovery-piscine-fun-with-coding-feb-2026-mumu21-art"
+                        target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <small>Industrial Engineering · Data Analytics · Creative Thinking</small>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function () {
+            $('#navToggle').on('click', function () {
+                $('#nav').toggleClass('show');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

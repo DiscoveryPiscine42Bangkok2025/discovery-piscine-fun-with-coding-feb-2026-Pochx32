@@ -1,52 +1,94 @@
-html,
+< !DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Rush Portfolio</title>< !-- Bootstrap --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><style>
+
+/* ===== GLOBAL THEME ===== */
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    padding-top: 70px;
+    background: #0f1115;
+    color: #eaeaea;
 }
 
-/* Parallax sections */
-.parallax {
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #ffffff;
 }
 
-/* First image */
-.img1 {
-    background-image: url("https://robbreport.com/wp-content/uploads/2024/06/opener-w-Bugatti-3_a9c757.jpg?w=800");
+p,
+li {
+    color: #e0e0e0;
 }
 
-/* Second image */
-.img2 {
-    background-image: url("https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&height=900&width=1600&fit=bounds");
+.text-muted {
+    color: #cfcfcf !important;
 }
 
-/* Center text */
-.text {
-    color: white;
-    font-size: 32px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 40px;
-    border-radius: 5px;
+/* ===== GLASS EFFECT ===== */
+.glass-box,
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    padding: 24px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Black block */
-.content {
-    height: 300px;
-    background-color: black;
-    color: white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 24px;
+.glass-box:hover,
+.glass-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
 }
+
+/* ===== NAVBAR ===== */
+.glass-navbar {
+    background: rgba(15, 17, 21, 0.75);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-link {
+    color: #eaeaea;
+}
+
+.navbar .nav-link:hover {
+    color: #ffffff;
+}
+
+/* ===== IMAGES ===== */
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.experience-img {
+    width: 45%;
+    max-height: 600px;
+    margin: 15px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== SECTION ===== */
+.section {
+    padding: 80px 0;
+}
+
+</style></head><body>< !-- NAVBAR --><nav class="navbar navbar-expand-lg fixed-top glass-navbar"><div class="container"><a class="navbar-brand fw-bold text-white" href="#">Portfolio</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse justify-content-end" id="navbarNav"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="#about">About</a></li><li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li><li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li><li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li></ul></div></div></nav>< !-- ABOUT --><section id="about" class="section"><div class="container"><div class="row align-items-center"><div class="col-lg-5 text-center mb-4 mb-lg-0"><img src="./photosrc/Pin_profile.JPG" alt="Profile" class="profile-img"></div><div class="col-lg-7"><div class="glass-box"><h2>Summary</h2><p class="text-muted">Detail-oriented Industrial Engineering student with cooperative internship experience as a Product Engineer at NXP Manufacturing Thailand. </p><p class="text-muted">Focused on automation,
+full-stack development,
+and engineering productivity tools. </p></div></div></div></div></section>< !-- PREFERRED POSITION --><section class="section"><div class="container text-center"><h2 class="fw-bold mb-4">Preferred Position</h2><div class="row g-4 justify-content-center"><div class="col-md-4"><div class="glass-card h-100"><h5>Full-Stack Developer</h5><p class="text-muted">Web application & automation systems</p></div></div><div class="col-md-4"><div class="glass-card h-100"><h5>Data Analyst</h5><p class="text-muted">Data processing & visualization</p></div></div><div class="col-md-4"><div class="glass-card h-100"><h5>Test Engineer</h5><p class="text-muted">Validation & test automation</p></div></div></div></div></section>< !-- EXPERIENCE --><section id="experience" class="section"><div class="container"><div class="glass-box"><h2>Work Experience</h2><p><strong>Product Engineer Intern — NXP Manufacturing Thailand</strong><br><em>April 2025 – October 2025</em></p><ul><li>Developed automation tools improving validation efficiency</li><li>Built Excel Add-ins integrated with FastAPI</li><li>Received Honorable Mention Award</li></ul><img src="./photosrc/NXP_award.jpg" class="experience-img" alt=""><img src="./photosrc/NXP_award2.jpg" class="experience-img" alt=""></div></div></section>< !-- SKILLS --><section id="skills" class="section"><div class="container"><div class="glass-box"><h2>Skills</h2><p><strong>Programming:</strong>JavaScript,
+HTML,
+CSS,
+Python</p><p><strong>Tools:</strong>GitHub,
+Node.js,
+VS Code</p></div></div></section>< !-- CONTACT --><section id="contact" class="section text-center"><div class="container"><div class="glass-box"><h2>Contact</h2><p>Email: 65011198@kmitl.ac.th</p><p>GitHub: Pochx32</p></div></div></section><footer class="text-center text-muted py-4"><small>Discovery Piscine · Rush Project</small></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body></html>
